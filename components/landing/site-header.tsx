@@ -81,7 +81,9 @@ export function SiteHeader() {
                   href={link.href}
                   className={cn(
                     "nav-link inline-flex rounded-lg px-3 py-2 text-sm font-medium",
-                    !isScrolled && "text-white/90 hover:text-white"
+                    isScrolled
+                      ? "hover:bg-slate-100"
+                      : "text-white/90 hover:text-white hover:bg-white/10 focus:bg-white/10 data-active:bg-white/10 data-active:hover:bg-white/15"
                   )}
                 >
                   {link.label}
