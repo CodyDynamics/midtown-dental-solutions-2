@@ -241,6 +241,15 @@
     text-wrap: balance;
   }
 
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .card-hover-lift {
     @apply transition-all duration-300;
   }

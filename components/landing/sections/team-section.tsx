@@ -8,7 +8,7 @@ import { TEAM } from "@/lib/constants/content";
 
 export function TeamSection() {
   return (
-    <section id="about" className="section-padding bg-[#F9FAFB]">
+    <section id="team" className="section-padding bg-[#F9FAFB]">
       <div className="section-container">
         <Reveal>
           <h2 className="heading-section mb-4">Meet the team</h2>

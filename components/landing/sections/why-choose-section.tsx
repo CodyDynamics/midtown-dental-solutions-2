@@ -5,11 +5,11 @@ import { IMAGES } from "@/lib/constants/images";
 
 export function WhyChooseSection() {
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="overview" className="section-padding overflow-x-hidden bg-white">
       <div className="section-container">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <Reveal className="relative">
-            <div className="absolute -inset-4 -rotate-3 rounded-2xl bg-[#F0F4FF] z-0" />
+            <div className="absolute -inset-2 -rotate-3 rounded-2xl bg-[#F0F4FF] z-0 sm:-inset-4" />
             <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl">
               <Image
                 src={IMAGES.whyChoose}
@@ -19,7 +19,7 @@ export function WhyChooseSection() {
                 className="aspect-[4/3] w-full object-cover"
               />
             </div>
-            <div className="glass-card absolute -right-8 -bottom-8 z-20 flex items-center gap-4 rounded-2xl border border-[#f3f4f6] p-6 shadow-xl">
+            <div className="glass-card relative z-20 mt-4 flex items-center gap-4 rounded-2xl border border-[#f3f4f6] p-6 shadow-xl sm:absolute sm:-right-4 sm:-bottom-4 sm:mt-0 md:-right-8 md:-bottom-8">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#2962FF]/10">
                 <Image
                   src="/assets/IMG_5.svg"

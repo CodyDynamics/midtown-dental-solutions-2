@@ -38,7 +38,7 @@ export function HeroSection() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[742px] items-center overflow-hidden bg-[#0f172a] pt-20"
+      className="relative flex min-h-[520px] items-center overflow-hidden bg-[#0f172a] pt-20 md:min-h-[640px] lg:min-h-[742px]"
     >
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="wait">
@@ -54,7 +54,7 @@ export function HeroSection() {
           />
         </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/82 via-[#0f172a]/58 to-[#0f172a]/22" />
-        <div className="absolute inset-x-0 bottom-8 z-20 hidden justify-center sm:flex">
+        <div className="absolute inset-x-0 bottom-6 z-20 flex justify-center sm:bottom-8">
           <div className="flex items-center gap-2 rounded-full border border-white/20 bg-black/20 px-3 py-2 backdrop-blur">
           {heroSlides.map((slide, index) => (
             <button

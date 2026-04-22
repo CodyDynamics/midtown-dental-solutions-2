@@ -16,7 +16,7 @@ export function VideoLibrarySection() {
   return (
     <section id="recordings" className="section-padding bg-[#F6F8F9]">
       <div className="section-container">
-        <div className="mb-12 flex flex-col items-end justify-between gap-6 md:flex-row">
+        <div className="mb-12 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <Reveal className="max-w-2xl text-left">
             <h2 className="heading-section mb-4">Project recordings</h2>
             <p className="text-lg text-[#8F96A3]">

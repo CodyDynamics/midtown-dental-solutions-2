@@ -3,8 +3,8 @@ import { Reveal } from "@/components/motion/reveal";
 import { SITE } from "@/lib/constants/content";
 
 const exploreLinks = [
-  { href: "#top", label: "Company overview" },
-  { href: "#about", label: "Meet the team" },
+  { href: "#overview", label: "Company overview" },
+  { href: "#team", label: "Meet the team" },
   { href: "#brands", label: "Authorized brands" },
   { href: "#recordings", label: "Project recordings" },
   { href: "#contact", label: "Contact" },
@@ -52,7 +52,7 @@ export function CtaFooterSection() {
                 Preferred email address for official communication.
               </p>
               <a
-                className="text-lg font-semibold text-[#1d4ed8] transition-colors hover:text-[#1e40af]"
+                className="text-lg font-semibold text-[#1d4ed8] transition-colors hover:text-[#1e40af] break-words"
                 href={`mailto:${SITE.contactEmail}`}
               >
                 {SITE.contactEmail}
@@ -84,7 +84,7 @@ export function CtaFooterSection() {
           </div>
         </div>
 
-        <div className="mt-24 grid gap-12 border-t border-[#dbe5f4] pt-12 md:grid-cols-4">
+        <div className="mt-24 grid gap-12 border-t border-[#dbe5f4] pt-12 md:grid-cols-2 xl:grid-cols-4">
           <div className="md:col-span-1">
             <div className="mb-6 flex items-center gap-3">
               <Image
