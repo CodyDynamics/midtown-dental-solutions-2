@@ -39,13 +39,12 @@ export function WhyChooseSection() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <h2 className="heading-section mb-6">
-              Why is Tempelite your best choice?
-            </h2>
+            <h2 className="heading-section mb-6">Company overview</h2>
             <p className="mb-10 text-lg text-[#8F96A3]">
-              We are committed to building the most effective, trustworthy medical
-              staffing platform—delivering practical value to clinicians and
-              healthcare organizations alike.
+              Midtown Dental Solutions delivers practical, field-proven service
+              for dental equipment and systems. Our value proposition is simple:
+              dependable technical support, fast response, and long-term
+              reliability for your practice.
             </p>
             <div className="space-y-8">
               {WHY_POINTS.map((item) => (

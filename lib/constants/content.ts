@@ -1,15 +1,16 @@
 export const SITE = {
-  name: "Tempelite Medical",
-  tagline: "Leading medical staffing platform",
-  contactEmail: "contact@tempelite.com",
+  name: "Midtown Dental Solutions",
+  tagline: "Dental equipment service and support specialists",
+  contactEmail: "steven@midtowndentalsolutions.com",
   phone: "(817) 602-0712",
   address: "Midtown Dental Solutions, Texas",
 } as const;
 
 export const NAV_LINKS = [
-  { href: "#top", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
+  { href: "#top", label: "Overview" },
+  { href: "#about", label: "Team" },
+  { href: "#brands", label: "Brands" },
+  { href: "#recordings", label: "Recordings" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
@@ -39,38 +40,38 @@ export const STEPS = [
 
 export const WHY_POINTS = [
   {
-    title: "Vetted experts",
-    body: "Access a high-quality talent pool that has been carefully screened and is ready to meet your needs.",
+    title: "What we do",
+    body: "We provide installation, preventive maintenance, repair, and technical support for dental offices and clinical teams.",
   },
   {
-    title: "Quality opportunities",
-    body: "Partner with leading facilities to access exclusive roles with compensation that reflects your expertise.",
+    title: "How we help",
+    body: "Our field technicians keep critical dental systems operating safely, minimizing downtime and helping teams stay focused on patient care.",
   },
   {
-    title: "Streamlined workflows",
-    body: "From posting to placement, our platform simplifies hiring so teams save time without cutting corners.",
+    title: "Why clients choose us",
+    body: "Hands-on expertise, responsive support, and trusted relationships with leading equipment manufacturers.",
   },
 ] as const;
 
 export const VALUE_CARDS = [
   {
-    title: "Data security",
-    body: "We prioritize the safety and privacy of your information with enterprise-grade safeguards.",
+    title: "Experienced technicians",
+    body: "Our team brings years of real-world service experience across core dental equipment categories.",
     icon: "/assets/IMG_11.svg",
   },
   {
-    title: "Vetted professionals",
-    body: "Every clinician completes thorough verification so only qualified candidates reach your shortlist.",
+    title: "Fast response",
+    body: "We prioritize clear communication and rapid troubleshooting to reduce operational interruptions.",
     icon: "/assets/IMG_6.svg",
   },
   {
-    title: "Quality assurance",
-    body: "We uphold elevated standards for both facilities and talent to deliver dependable matches.",
+    title: "Brand-authorized support",
+    body: "We service and support products from top manufacturers used by modern dental practices.",
     icon: "/assets/IMG_12.svg",
   },
   {
-    title: "Secure processes",
-    body: "Personal data and applications are handled with strict confidentiality at every step.",
+    title: "Long-term partnership",
+    body: "From setup to ongoing maintenance, we stay involved to help practices scale with confidence.",
     icon: "/assets/IMG_13.svg",
   },
 ] as const;

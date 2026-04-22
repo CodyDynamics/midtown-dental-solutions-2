@@ -34,7 +34,7 @@ export function HeroSection() {
           >
             <span className="h-2 w-2 rounded-full bg-[#2962FF]" />
             <span className="text-sm font-medium text-[#2962FF]">
-              World-class medical staffing network
+              Trusted dental equipment service team
             </span>
           </motion.div>
 
@@ -43,7 +43,7 @@ export function HeroSection() {
             transition={{ duration: 0.55, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
             className="text-balance mb-6 text-4xl leading-[1.1] font-extrabold tracking-tight text-[#181B20] md:text-6xl"
           >
-            Connecting top medical professionals with reputable facilities
+            Reliable technical support for modern dental practices
           </motion.h1>
 
           <motion.p
@@ -51,9 +51,9 @@ export function HeroSection() {
             transition={{ duration: 0.55, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
             className="mb-10 text-lg leading-relaxed text-[#8F96A3] md:text-xl"
           >
-            Tempelite is an exclusive network that pairs outstanding physicians,
-            nurses (RNs), and allied health professionals with meaningful career
-            opportunities—streamlining hiring and saving everyone time.
+            Midtown Dental Solutions supports clinics with installation,
+            maintenance, and repair services for essential dental systems so
+            your team can operate with confidence every day.
           </motion.p>
 
           <motion.div
@@ -62,7 +62,7 @@ export function HeroSection() {
             className="flex flex-col gap-4 sm:flex-row"
           >
             <a href="#contact" className="btn-primary">
-              Start now
+              Request service
               <Image
                 src="/assets/IMG_3.svg"
                 alt=""
@@ -72,7 +72,7 @@ export function HeroSection() {
               />
             </a>
             <a href="#about" className="btn-secondary">
-              Learn more about us
+              View company overview
             </a>
           </motion.div>
         </div>

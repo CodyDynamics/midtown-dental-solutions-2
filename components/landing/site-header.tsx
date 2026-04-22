@@ -25,17 +25,15 @@ export function SiteHeader() {
           href="#top"
           className="flex items-center gap-3 transition-transform hover:scale-[1.02]"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#2962FF]">
-            <Image
-              src="/assets/IMG_1.svg"
-              alt={`${SITE.name} mark`}
-              width={24}
-              height={24}
-              className="h-6 w-6"
-            />
-          </div>
+          <Image
+            src="/assets/logo-midtown.png"
+            alt={`${SITE.name} logo`}
+            width={40}
+            height={40}
+            className="h-10 w-10 rounded-xl object-cover"
+          />
           <span className="text-xl font-bold tracking-tight text-[#181B20]">
-            Tempelite <span className="text-[#2962FF]">Medical</span>
+            Midtown <span className="text-[#2962FF]">Dental Solutions</span>
           </span>
         </Link>
 
@@ -58,13 +56,13 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3 sm:gap-4">
           <a href="#contact" className="btn-nav-login hidden sm:inline-flex">
-            Login
+            Contact
           </a>
           <a href="#contact" className="btn-header-cta hidden sm:inline-flex">
-            Register now
+            Request support
           </a>
           <a href="#contact" className="btn-header-cta sm:hidden">
-            Join
+            Contact
           </a>
         </div>
       </div>

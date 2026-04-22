@@ -3,7 +3,7 @@ import { PARTNERS } from "@/lib/constants/content";
 
 export function PartnersStripSection() {
   return (
-    <section className="border-b border-[#f3f4f6] bg-white py-16">
+    <section id="brands" className="border-b border-[#f3f4f6] bg-white py-16">
       <div className="section-container text-center">
         <Reveal>
           <p className="mb-10 text-xs font-bold tracking-[0.2em] text-[#8F96A3] uppercase">

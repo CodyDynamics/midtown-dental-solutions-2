@@ -4,18 +4,18 @@ import { SITE } from "@/lib/constants/content";
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": "MedicalOrganization",
+  "@type": "Dentist",
   name: SITE.name,
   description:
-    "Medical staffing platform connecting verified clinicians with reputable healthcare facilities.",
+    "Dental equipment installation, preventive maintenance, and technical support services.",
   email: SITE.contactEmail,
   telephone: SITE.phone,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Texas",
+    addressLocality: "Fort Worth",
     streetAddress: SITE.address,
   },
-  url: "https://tempelite.com",
+  url: "https://midtowndentalsolutions.com",
 } as const;
 
 export default function Home() {

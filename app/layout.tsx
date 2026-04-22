@@ -16,43 +16,43 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tempelite.com"),
+  metadataBase: new URL("https://midtowndentalsolutions.com"),
   title: {
-    default: "Tempelite Medical | Healthcare Staffing & Recruitment",
-    template: "%s | Tempelite Medical",
+    default: "Midtown Dental Solutions | Equipment Service & Support",
+    template: "%s | Midtown Dental Solutions",
   },
   description:
-    "Connect with vetted physicians, nurses, and allied health professionals—or find your next role at leading facilities. Secure, streamlined medical staffing.",
+    "Midtown Dental Solutions provides installation, preventive maintenance, and repair support for essential dental equipment.",
   keywords: [
-    "medical staffing",
-    "healthcare recruitment",
-    "nurse staffing",
-    "clinical hiring",
-    "Tempelite Medical",
+    "dental equipment service",
+    "dental equipment maintenance",
+    "sterilization systems support",
+    "dental chair repair",
+    "Midtown Dental Solutions",
   ],
-  authors: [{ name: "Tempelite Medical" }],
-  creator: "Tempelite Medical",
+  authors: [{ name: "Midtown Dental Solutions" }],
+  creator: "Midtown Dental Solutions",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://tempelite.com",
-    siteName: "Tempelite Medical",
-    title: "Tempelite Medical | Healthcare Staffing & Recruitment",
+    url: "https://midtowndentalsolutions.com",
+    siteName: "Midtown Dental Solutions",
+    title: "Midtown Dental Solutions | Equipment Service & Support",
     description:
-      "Connect top medical professionals with reputable facilities through a secure, modern staffing platform.",
+      "Reliable technical service and support for modern dental practices.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tempelite Medical | Healthcare Staffing & Recruitment",
+    title: "Midtown Dental Solutions | Equipment Service & Support",
     description:
-      "Connect top medical professionals with reputable facilities through a secure, modern staffing platform.",
+      "Reliable technical service and support for modern dental practices.",
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://tempelite.com",
+    canonical: "https://midtowndentalsolutions.com",
   },
 };
 

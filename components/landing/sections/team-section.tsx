@@ -8,13 +8,13 @@ import { TEAM } from "@/lib/constants/content";
 
 export function TeamSection() {
   return (
-    <section className="section-padding bg-[#F9FAFB]">
+    <section id="about" className="section-padding bg-[#F9FAFB]">
       <div className="section-container">
         <Reveal>
-          <h2 className="heading-section mb-4">Meet our team</h2>
+          <h2 className="heading-section mb-4">Meet the team</h2>
           <p className="mb-16 max-w-3xl text-lg text-[#8F96A3]">
-            Seasoned specialists who understand clinical operations and are
-            ready to help you hire faster with confidence.
+            Executive leadership and field specialists with deep technical
+            expertise in dental equipment service and support.
           </p>
         </Reveal>
 

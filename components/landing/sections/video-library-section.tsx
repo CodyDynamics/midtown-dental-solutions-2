@@ -14,14 +14,14 @@ const thumbByKey = {
 
 export function VideoLibrarySection() {
   return (
-    <section className="section-padding bg-[#F6F8F9]">
+    <section id="recordings" className="section-padding bg-[#F6F8F9]">
       <div className="section-container">
         <div className="mb-12 flex flex-col items-end justify-between gap-6 md:flex-row">
           <Reveal className="max-w-2xl text-left">
-            <h2 className="heading-section mb-4">Project video library</h2>
+            <h2 className="heading-section mb-4">Project recordings</h2>
             <p className="text-lg text-[#8F96A3]">
-              Explore professional workflows, maintenance walkthroughs, and
-              highlight projects from our field teams.
+              Let us know whether you want to publish these existing videos as-is
+              or refine/edit them first before launch.
             </p>
           </Reveal>
           <Reveal delay={0.08}>
@@ -33,7 +33,7 @@ export function VideoLibrarySection() {
                 "h-auto rounded-xl border-[#dee1e6] px-6 py-2.5 text-sm font-semibold shadow-none transition-all hover:-translate-y-px hover:bg-slate-50 hover:shadow-md"
               )}
             >
-              View all videos
+              Review recording plan
             </Button>
           </Reveal>
         </div>

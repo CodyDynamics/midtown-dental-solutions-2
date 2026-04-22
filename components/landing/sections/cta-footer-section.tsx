@@ -3,9 +3,10 @@ import { Reveal } from "@/components/motion/reveal";
 import { SITE } from "@/lib/constants/content";
 
 const exploreLinks = [
-  { href: "#about", label: "About us" },
-  { href: "#services", label: "Featured services" },
-  { href: "#contact", label: "FAQ" },
+  { href: "#top", label: "Company overview" },
+  { href: "#about", label: "Meet the team" },
+  { href: "#brands", label: "Authorized brands" },
+  { href: "#recordings", label: "Project recordings" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -21,15 +22,13 @@ export function CtaFooterSection() {
       <div className="section-container">
         <div className="grid gap-12 lg:grid-cols-3">
           <Reveal className="lg:col-span-1">
-            <h2 className="mb-6 text-3xl font-bold text-white">
-              Ready to connect?
-            </h2>
+            <h2 className="mb-6 text-3xl font-bold text-white">Contact us</h2>
             <p className="mb-10 leading-relaxed text-[#F9FAFB]/80">
-              Join a curated network of clinicians and healthcare facilities
-              today. Our team is ready to guide you through onboarding.
+              Primary contact for service requests, partnership inquiries, and
+              publishing decisions for project recordings.
             </p>
-            <a href={`mailto:${SITE.contactEmail}?subject=Join%20Tempelite%20Medical`} className="btn-primary">
-              Join now
+            <a href={`mailto:${SITE.contactEmail}?subject=Midtown%20Dental%20Solutions%20Inquiry`} className="btn-primary">
+              Send inquiry
             </a>
           </Reveal>
 
@@ -43,9 +42,7 @@ export function CtaFooterSection() {
                 className="mb-6 h-8 w-8"
               />
               <h3 className="mb-2 text-xl font-semibold">Email us</h3>
-              <p className="mb-6 text-sm text-[#F9FAFB]/70">
-                Support responds within one business day.
-              </p>
+              <p className="mb-6 text-sm text-[#F9FAFB]/70">Preferred email address for official communication.</p>
               <a
                 className="text-lg font-medium text-[#2962FF] transition-colors hover:text-blue-300"
                 href={`mailto:${SITE.contactEmail}`}
@@ -62,9 +59,9 @@ export function CtaFooterSection() {
                 height={32}
                 className="mb-6 h-8 w-8"
               />
-              <h3 className="mb-2 text-xl font-semibold">Call us directly</h3>
+              <h3 className="mb-2 text-xl font-semibold">Primary phone</h3>
               <p className="mb-6 text-sm text-[#F9FAFB]/70">
-                Administrative and urgent technical assistance.
+                Preferred phone number for urgent technical support.
               </p>
               <a
                 className="text-lg font-medium text-[#2962FF] transition-colors hover:text-blue-300"
@@ -79,22 +76,20 @@ export function CtaFooterSection() {
         <div className="mt-24 grid gap-12 border-t border-[#F9FAFB]/20 pt-12 md:grid-cols-4">
           <div className="md:col-span-1">
             <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-[#2962FF]">
-                <Image
-                  src="/assets/IMG_1.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                  className="h-5 w-5"
-                />
-              </div>
+              <Image
+                src="/assets/logo-midtown.png"
+                alt={`${SITE.name} logo`}
+                width={32}
+                height={32}
+                className="h-8 w-8 rounded-md object-cover"
+              />
               <span className="text-xl font-bold">
-                Tempelite <span className="text-[#2962FF]">Medical</span>
+                Midtown <span className="text-[#2962FF]">Dental Solutions</span>
               </span>
             </div>
             <p className="mb-8 text-sm leading-relaxed text-[#F9FAFB]/70">
-              A leading medical staffing platform delivering high-quality,
-              secure, and efficient workforce solutions for modern healthcare.
+              Dental equipment service, maintenance, and support partner for
+              modern practices and care teams.
             </p>
             <div className="flex items-start gap-2 text-sm text-[#F9FAFB]/80">
               <Image
@@ -159,7 +154,7 @@ export function CtaFooterSection() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[#F9FAFB]/10 pt-8 md:flex-row">
           <p className="text-sm text-[#F9FAFB]/50">
-            © {new Date().getFullYear()} Tempelite Medical Solutions. All rights
+            © {new Date().getFullYear()} Midtown Dental Solutions. All rights
             reserved.
           </p>
           <div className="flex gap-6 text-sm text-[#F9FAFB]/50">
