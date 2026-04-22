@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
@@ -13,12 +14,29 @@ import { NAV_LINKS, SITE } from "@/lib/constants/content";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 8);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <motion.header
       initial={{ y: -12, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-0 right-0 left-0 z-50 border-b border-[#f3f4f6] bg-[#F9FAFB]/70 backdrop-blur-md"
+      className={cn(
+        "fixed top-0 right-0 left-0 z-50 transition-all duration-300",
+        isScrolled
+          ? "border-b border-[#dbe5f4] bg-white/95 shadow-[0_8px_30px_rgba(15,23,42,0.06)] backdrop-blur-sm"
+          : "border-b border-white/25 bg-transparent shadow-none backdrop-blur-0"
+      )}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-12">
         <Link
@@ -32,8 +50,16 @@ export function SiteHeader() {
             height={40}
             className="h-10 w-10 rounded-xl object-cover"
           />
-          <span className="text-xl font-bold tracking-tight text-[#181B20]">
-            Midtown <span className="text-[#2962FF]">Dental Solutions</span>
+          <span
+            className={cn(
+              "text-xl font-bold tracking-tight transition-colors duration-300",
+              isScrolled ? "text-[#181B20]" : "text-white"
+            )}
+          >
+            Midtown{" "}
+            <span className={cn("transition-colors duration-300", isScrolled ? "text-[#2962FF]" : "text-white")}>
+              Dental Solutions
+            </span>
           </span>
         </Link>
 
@@ -44,7 +70,8 @@ export function SiteHeader() {
                 <NavigationMenuLink
                   href={link.href}
                   className={cn(
-                    "nav-link inline-flex rounded-lg px-3 py-2 text-sm font-medium"
+                    "nav-link inline-flex rounded-lg px-3 py-2 text-sm font-medium",
+                    !isScrolled && "text-white/90 hover:text-white"
                   )}
                 >
                   {link.label}
@@ -55,7 +82,10 @@ export function SiteHeader() {
         </NavigationMenu>
 
         <div className="flex items-center gap-3 sm:gap-4">
-          <a href="#contact" className="btn-nav-login hidden sm:inline-flex">
+          <a
+            href="#contact"
+            className={cn("btn-nav-login hidden sm:inline-flex", !isScrolled && "text-white hover:text-white")}
+          >
             Contact
           </a>
           <a href="#contact" className="btn-header-cta hidden sm:inline-flex">

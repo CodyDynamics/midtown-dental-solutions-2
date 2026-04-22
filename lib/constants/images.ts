@@ -9,7 +9,7 @@ export const IMAGES = {
   partner:
     "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80",
   video1:
-    "https://images.unsplash.com/photo-1588776814546-1ffcf47269a5?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=90",
   video2:
     "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80",
   video3:
