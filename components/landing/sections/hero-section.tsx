@@ -105,7 +105,7 @@ export function HeroSection() {
           <motion.div
             {...fadeUp}
             transition={{ duration: 0.55, delay: 0.24, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col gap-4 sm:flex-row"
+            className="flex"
           >
             <a href="#contact" className="btn-primary">
               Request service
@@ -116,9 +116,6 @@ export function HeroSection() {
                 height={16}
                 className="h-4 w-4"
               />
-            </a>
-            <a href="#about" className="btn-secondary">
-              View company overview
             </a>
           </motion.div>
         </div>

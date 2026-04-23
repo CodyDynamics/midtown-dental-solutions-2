@@ -131,9 +131,6 @@ export function SiteHeader() {
           >
             Contact
           </a>
-          <a href="#contact" className="btn-header-cta hidden sm:inline-flex">
-            Request support
-          </a>
         </div>
       </div>
       {mobileMenuOpen ? (

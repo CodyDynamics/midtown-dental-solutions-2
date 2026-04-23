@@ -154,7 +154,7 @@
 
 @layer components {
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-4 md:py-24;
   }
 
   .section-container {
