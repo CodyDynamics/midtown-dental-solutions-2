@@ -14,7 +14,7 @@ export function TestimonialsSection() {
   }));
 
   return (
-    <section id="testimonials" className="section-padding bg-white">
+    <section id="testimonials" className="section-padding bg-slate-100">
       <div className="section-container">
         <Reveal className="mb-10">
           <h2 className="heading-section mb-4">Customer testimonials & reviews</h2>

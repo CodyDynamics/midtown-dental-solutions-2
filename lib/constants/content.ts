@@ -69,6 +69,7 @@ export const TEAM = [
   {
     name: "Steven Tran",
     role: "Chief Executive Officer / Owner",
+    image: "/assets/people/steventran.jpeg",
     highlights: [
       "10+ years in medical equipment and dental technology",
       "Associate of Science (2010), Associate of Applied Science (2008)",
@@ -77,6 +78,7 @@ export const TEAM = [
   {
     name: "Wayne Wood",
     role: "Chief Technology Officer / Technical Advisor",
+    image: "/assets/people/waynewood.jpeg",
     highlights: [
       "40+ years of hands-on field experience",
       "Expert trainer for clinical engineering technicians",
@@ -85,6 +87,7 @@ export const TEAM = [
   {
     name: "Matthew Thai",
     role: "Sterile Processing Systems Specialist",
+    image: "/assets/people/matthew_thai.jpeg",
     highlights: [
       "7 years as a field service technician",
       "Associate of Science (2007)",
@@ -93,6 +96,7 @@ export const TEAM = [
   {
     name: "Chau Do",
     role: "Senior Field Technician",
+    image: "/assets/people/chaudo.jpeg",
     highlights: [
       "4 years of specialized clinical support",
       "Bachelor of Applied Science (2015)",
@@ -101,6 +105,7 @@ export const TEAM = [
   {
     name: "Jadon Thai",
     role: "Field Technician",
+    image: "/assets/people/jadonthai.jpeg",
     highlights: [
       "2 years of practical field experience",
       "Master of Science in Molecular Diagnostics (2020)",
@@ -109,6 +114,7 @@ export const TEAM = [
   {
     name: "Jared Thai",
     role: "Field Technician",
+    image: "/assets/people/jaredthai.jpeg",
     highlights: [
       "2 years of practical field experience",
       "Bachelor of Biomedical Engineering (2022)",
@@ -121,6 +127,7 @@ export const VIDEOS = [
     title: "A-dec dental chair system — essential maintenance walkthrough",
     meta: "Technician: Steven Tran • 15 min",
     imageKey: "video1" as const,
+    src: "/assets/people/video1.mp4",
   },
   {
     title: "Sterilization workflow best practices for busy practices",

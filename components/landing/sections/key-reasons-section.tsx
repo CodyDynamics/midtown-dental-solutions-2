@@ -3,7 +3,7 @@ import { KEY_REASONS } from "@/lib/constants/content";
 
 export function KeyReasonsSection() {
   return (
-    <section id="key-reasons" className="section-padding bg-white pt-0">
+    <section id="key-reasons" className="section-padding bg-slate-100 pt-0">
       <div className="section-container">
         <Reveal delay={0.08}>
           <h3 className="mb-4 text-2xl font-bold text-[#0f172a]">

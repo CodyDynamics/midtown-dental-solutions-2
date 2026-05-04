@@ -20,7 +20,7 @@ export function CtaFooterSection() {
   return (
     <section
       id="contact"
-      className="section-padding border-t border-[#dbe5f4] bg-gradient-to-b from-[#f8fbff] to-white text-[#0f172a]"
+      className="section-padding border-t border-slate-200/80 bg-gradient-to-b from-slate-100 to-slate-50 text-[#0f172a]"
     >
       <div className="section-container">
         <div className="grid gap-12 lg:grid-cols-3">

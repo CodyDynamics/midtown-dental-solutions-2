@@ -5,7 +5,7 @@ import { IMAGES } from "@/lib/constants/images";
 
 export function WhyChooseSection() {
   return (
-    <section id="overview" className="section-padding overflow-x-hidden bg-white">
+    <section id="overview" className="section-padding overflow-x-hidden bg-slate-100">
       <div className="section-container">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <Reveal className="relative">

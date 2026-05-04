@@ -3,12 +3,11 @@ import { motion } from "motion/react";
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Reveal } from "@/components/motion/reveal";
-import { AVATARS } from "@/lib/constants/images";
 import { TEAM } from "@/lib/constants/content";
 
 export function TeamSection() {
   return (
-    <section id="team" className="section-padding bg-[#F9FAFB]">
+    <section id="team" className="section-padding bg-slate-100">
       <div className="section-container">
         <Reveal>
           <h2 className="heading-section mb-4">Meet the team</h2>
@@ -29,7 +28,7 @@ export function TeamSection() {
                   <div className="mb-6 flex items-center gap-4">
                     <Avatar className="size-20 rounded-full ring-2 ring-[#2962FF]/15">
                       <AvatarImage
-                        src={AVATARS[index % AVATARS.length]}
+                        src={member.image}
                         alt={member.name}
                       />
                     </Avatar>
