@@ -82,8 +82,8 @@ const TestimonialCarousel = React.forwardRef<
               <motion.div
                 key={testimonial.id}
                 className={cn(
-                  "absolute h-full w-full cursor-grab rounded-2xl border border-[#dbe5f4] bg-white p-6 shadow-xl active:cursor-grabbing sm:rounded-3xl sm:p-8",
-                  "dark:bg-card dark:shadow-[2px_2px_4px_rgba(0,0,0,0.4),-1px_-1px_3px_rgba(255,255,255,0.1)]"
+                  "absolute h-full w-full cursor-grab rounded-2xl border border-slate-300/50 bg-slate-200/90 p-6 shadow-xl active:cursor-grabbing sm:rounded-3xl sm:p-8",
+                  "dark:border-slate-600 dark:bg-slate-800 dark:shadow-[2px_2px_4px_rgba(0,0,0,0.4),-1px_-1px_3px_rgba(255,255,255,0.1)]"
                 )}
                 style={{
                   zIndex: isCurrentCard ? 3 : isPrevCard ? 2 : 1,

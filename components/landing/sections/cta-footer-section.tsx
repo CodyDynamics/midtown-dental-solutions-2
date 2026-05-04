@@ -38,7 +38,7 @@ export function CtaFooterSection() {
           <div className="grid gap-6 md:grid-cols-2 lg:col-span-2">
             <Reveal
               delay={0.06}
-              className="rounded-2xl border border-[#dbe5f4] bg-white p-8 shadow-[0_20px_40px_rgba(37,99,235,0.08)]"
+              className="rounded-2xl border border-slate-300/50 bg-slate-200/90 p-8 shadow-[0_20px_40px_rgba(37,99,235,0.06)]"
             >
               <Image
                 src="/assets/IMG_25.svg"
@@ -61,7 +61,7 @@ export function CtaFooterSection() {
 
             <Reveal
               delay={0.1}
-              className="rounded-2xl border border-[#dbe5f4] bg-white p-8 shadow-[0_20px_40px_rgba(37,99,235,0.08)]"
+              className="rounded-2xl border border-slate-300/50 bg-slate-200/90 p-8 shadow-[0_20px_40px_rgba(37,99,235,0.06)]"
             >
               <Image
                 src="/assets/IMG_26.svg"
@@ -141,7 +141,7 @@ export function CtaFooterSection() {
           </div>
 
           <div>
-            <div className="rounded-xl border border-[#dbe5f4] bg-[#f8fbff] p-6 text-center text-[#0f172a]">
+            <div className="rounded-xl border border-slate-300/50 bg-slate-200/90 p-6 text-center text-[#0f172a]">
               <Image
                 src="/assets/IMG_27.svg"
                 alt=""

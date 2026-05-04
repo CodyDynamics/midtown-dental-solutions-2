@@ -44,22 +44,24 @@ export function SiteHeader() {
       className={cn(
         "fixed top-0 right-0 left-0 z-50 transition-all duration-300",
         isScrolled
-          ? "border-b border-[#dbe5f4] bg-white/95 shadow-[0_8px_30px_rgba(15,23,42,0.06)] backdrop-blur-sm"
+          ? "border-b border-slate-200/90 bg-slate-100/95 shadow-[0_8px_30px_rgba(15,23,42,0.06)] backdrop-blur-sm"
           : "border-b border-white/25 bg-transparent shadow-none backdrop-blur-0"
       )}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-12">
+      <div className="mx-auto flex min-h-24 max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-12">
         <Link
           href="#top"
           className="flex items-center gap-3 transition-transform hover:scale-[1.02]"
         >
-          <Image
-            src="/assets/logo-midtown.png"
-            alt={`${SITE.name} logo`}
-            width={40}
-            height={40}
-            className="h-10 w-10 rounded-xl object-cover"
-          />
+          <div className="shrink-0 rounded-2xl bg-sky-50 p-1.5 ring-1 ring-sky-100/80 shadow-[0_1px_2px_rgba(14,165,233,0.12)] dark:bg-sky-950/40 dark:ring-sky-800/60">
+            <Image
+              src="/assets/logo-midtown.png"
+              alt={`${SITE.name} logo`}
+              width={80}
+              height={80}
+              className="h-20 w-20 rounded-xl object-cover"
+            />
+          </div>
           <span
             className={cn(
               "max-w-[180px] truncate text-base font-bold tracking-tight transition-colors duration-300 sm:max-w-none sm:text-xl",
@@ -82,7 +84,7 @@ export function SiteHeader() {
                   className={cn(
                     "nav-link inline-flex rounded-lg px-3 py-2 text-sm font-medium",
                     isScrolled
-                      ? "hover:bg-slate-100"
+                      ? "hover:bg-slate-200/70"
                       : "text-white/90 hover:text-white hover:bg-white/10 focus:bg-white/10 data-active:bg-white/10 data-active:hover:bg-white/15"
                   )}
                 >
@@ -101,7 +103,7 @@ export function SiteHeader() {
             className={cn(
               "inline-flex h-11 w-11 items-center justify-center rounded-xl border transition-colors md:hidden",
               isScrolled
-                ? "border-[#dbe5f4] bg-white text-[#0f172a]"
+                ? "border-slate-300/80 bg-slate-200/80 text-[#0f172a]"
                 : "border-white/40 bg-white/10 text-white"
             )}
           >
@@ -134,7 +136,7 @@ export function SiteHeader() {
         </div>
       </div>
       {mobileMenuOpen ? (
-        <div className="border-t border-[#dbe5f4] bg-white/98 px-4 py-3 shadow-[0_14px_28px_rgba(15,23,42,0.12)] md:hidden">
+        <div className="border-t border-slate-200/90 bg-slate-100/98 px-4 py-3 shadow-[0_14px_28px_rgba(15,23,42,0.12)] md:hidden">
           <nav className="grid grid-cols-2 gap-2">
             {NAV_LINKS.map((link) => (
               <a
