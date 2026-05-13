@@ -2,6 +2,7 @@ export const SITE = {
   name: "Midtown Dental Solutions",
   tagline: "Dental equipment service and support specialists",
   contactEmail: "steven@midtowndentalsolutions.com",
+  contactEmail2: "midtowndentalsv@gmail.com",
   phone: "(817) 602-0712",
   address: "Midtown Dental Solutions, Texas",
 } as const;

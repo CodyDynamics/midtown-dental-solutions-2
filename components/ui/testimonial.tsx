@@ -188,7 +188,7 @@ TestimonialCarousel.displayName = "TestimonialCarousel";
 
 export { TestimonialCarousel };
 
-function getInitials(name: string) {
+export function getInitials(name: string) {
   return name
     .split(" ")
     .filter(Boolean)

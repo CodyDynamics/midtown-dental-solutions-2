@@ -53,13 +53,13 @@ export function SiteHeader() {
           href="#top"
           className="flex items-center gap-3 transition-transform hover:scale-[1.02]"
         >
-          <div className="shrink-0 rounded-2xl bg-sky-50 p-1.5 ring-1 ring-sky-100/80 shadow-[0_1px_2px_rgba(14,165,233,0.12)] dark:bg-sky-950/40 dark:ring-sky-800/60">
+          <div className="w-[140px] flex shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-sky-50 p-1.5 ring-1 ring-sky-100/80 shadow-[0_1px_2px_rgba(14,165,233,0.12)] dark:bg-sky-950/40 dark:ring-sky-800/60">
             <Image
               src="/assets/logo-midtown.png"
               alt={`${SITE.name} logo`}
               width={80}
               height={80}
-              className="h-20 w-20 rounded-xl object-cover"
+              className="h-20 w-20 origin-center scale-[1.4] rounded-xl object-cover"
             />
           </div>
           <span

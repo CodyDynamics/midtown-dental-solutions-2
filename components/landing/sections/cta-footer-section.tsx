@@ -26,11 +26,17 @@ export function CtaFooterSection() {
         <div className="grid gap-12 lg:grid-cols-3">
           <Reveal className="lg:col-span-1">
             <h2 className="mb-6 text-3xl font-bold text-[#0f172a]">Contact us</h2>
-            <p className="mb-10 leading-relaxed text-[#334155]">
+            <p className="my-4 leading-relaxed text-[#334155]">
               Primary contact for service requests, partnership inquiries, and
               publishing decisions for project recordings.
             </p>
-            <a href={`mailto:${SITE.contactEmail}?subject=Midtown%20Dental%20Solutions%20Inquiry`} className="btn-primary">
+            <a
+              className="text-lg mb-4 font-semibold text-[#1d4ed8] transition-colors hover:text-[#1e40af]"
+              href={`mailto:${SITE.contactEmail2}`}
+            >
+              <span className="font-bold text-black">Email:</span> {SITE.contactEmail2}
+            </a>
+            <a href={`mailto:${SITE.contactEmail2}?subject=Midtown%20Dental%20Solutions%20Inquiry`} className="btn-primary mt-2">
               Send inquiry
             </a>
           </Reveal>

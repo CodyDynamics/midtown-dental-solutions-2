@@ -5,7 +5,7 @@ import { HeroSection } from "@/components/landing/sections/hero-section";
 import { KeyReasonsSection } from "@/components/landing/sections/key-reasons-section";
 import { PartnersStripSection } from "@/components/landing/sections/partners-strip-section";
 import { TeamSection } from "@/components/landing/sections/team-section";
-import { TestimonialsSection } from "@/components/landing/sections/testimonials-section";
+import { TestimonialsSection2 } from "@/components/landing/sections/testimonials-section-2";
 import { VideoLibrarySection } from "@/components/landing/sections/video-library-section";
 import { WhyChooseSection } from "@/components/landing/sections/why-choose-section";
 
@@ -18,7 +18,7 @@ export function LandingSections() {
       <TeamSection />
       <PartnersStripSection />
       <VideoLibrarySection />
-      <TestimonialsSection />
+      <TestimonialsSection2 />
       <CtaFooterSection />
     </main>
   );
