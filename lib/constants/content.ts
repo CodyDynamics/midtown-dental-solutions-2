@@ -143,14 +143,10 @@ export const VIDEOS = [
 ] as const;
 
 export const PARTNERS = [
-  "A-dec",
-  "Chicago Xray",
-  "Tuttnauer USA",
-  "SDS",
-  "DCI",
-  "Techwest",
-  "RPI",
-  "Engle Dental",
+  "ADS",
+  "Flight deck dental",
+  "TPC",
+  "Vector",
 ] as const;
 
 export const TESTIMONIALS = [
