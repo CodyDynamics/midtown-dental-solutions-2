@@ -143,6 +143,10 @@ export const VIDEOS = [
 ] as const;
 
 export const PARTNERS = [
+  "ADS",
+  "Flight Deck Dental",
+  "TPC",
+  "Vector",
   "Chicago Xray",
   "Tuttnauer USA",
   "SDS",
