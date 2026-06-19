@@ -41,7 +41,7 @@ export const STEPS = [
 ] as const;
 
 export const COMPANY_OVERVIEW_TEXT =
-  "Midtown Dental Solutions is a premier provider of dental equipment and services, dedicated to enhancing the operational efficiency and success of dental practices across the region. Our mission is to empower dental professionals with high-quality tools and services that elevate patient care and streamline practice management. We understand that a well-equipped dental office is crucial for delivering exceptional patient experiences, and we are here to support every aspect of that journey. We specialize in the sale, repair, and maintenance of a comprehensive range of dental equipment, ensuring that our clients have access to the latest technology that meets their operational needs. Our services include:" as const;
+  "Midtown Dental Solutions is a premier provider of dental equipment and services, dedicated to enhancing the operational efficiency and success of dental practices across the region. Our mission is to empower dental professionals with high-quality tools and services that elevate patient care and streamline practice management. We understand that a well-equipped dental office is crucial for delivering exceptional patient experiences, and we are here to support every aspect of that journey. We specialize in the sale, repair, and maintenance of a comprehensive range of dental equipment, ensuring that our clients have access to the latest technology that meets their operational needs. Our services include: Equipment repairs, sales maintenances, transfers, installation, Radiology Equipment performance evaluation (EPE) and a vast range of other dental related services." as const;
 
 export const VALUE_CARDS = [
   {

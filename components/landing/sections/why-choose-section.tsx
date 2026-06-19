@@ -22,7 +22,7 @@ export function WhyChooseSection() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <h2 className="heading-section mb-6">Company overview</h2>
+            <h2 className="heading-section mb-6">Company Overview</h2>
             <p className="mb-10 text-lg text-[#8F96A3]">
               {COMPANY_OVERVIEW_TEXT}
             </p>
