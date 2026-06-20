@@ -1,5 +1,21 @@
 import { Reveal } from "@/components/motion/reveal";
+import { Marquee } from "@/components/ui/marquee";
 import { PARTNERS } from "@/lib/constants/content";
+
+function PartnerNames() {
+  return (
+    <>
+      {PARTNERS.map((name) => (
+        <span
+          key={name}
+          className="whitespace-nowrap text-2xl font-bold text-[#181B20] transition-opacity hover:opacity-100"
+        >
+          {name}
+        </span>
+      ))}
+    </>
+  );
+}
 
 export function PartnersStripSection() {
   return (
@@ -10,17 +26,11 @@ export function PartnersStripSection() {
             Authorized brands & partners
           </p>
         </Reveal>
-        <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 opacity-60">
-          {PARTNERS.map((name) => (
-            <span
-              key={name}
-              className="text-2xl font-bold text-[#181B20] transition-opacity hover:opacity-100"
-            >
-              {name}
-            </span>
-          ))}
-        </div>
       </div>
+
+      <Marquee className="opacity-60" duration={50}>
+        <PartnerNames />
+      </Marquee>
     </section>
   );
 }

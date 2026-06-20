@@ -257,6 +257,26 @@
   .card-hover-lift:hover {
     @apply -translate-y-1 shadow-lg;
   }
+
+  .partners-marquee-track {
+    animation: partners-marquee var(--marquee-duration, 45s) linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .partners-marquee-track {
+      animation: none;
+    }
+  }
+
+  @keyframes partners-marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 html {
